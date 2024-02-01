@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <h1>Can you turn on/off this bulb?</h1>
+        <!-- <button id="btn1" onclick="document.getElementById('myImage').src='images/bulb_on.webp' ">Turn On</button> -->
+        <button id="btn1" onclick="on()">Turn On</button>
+
+        <img src="images/bulb_off.png" alt="default" id="myImage">
+
+        <!-- <button id="btn2" onclick="document.getElementById('myImage').src='images/bulb_off.png' ">Turn Off</button> -->
+        <button id="btn2">Turn Off</button>
+    </div>
+
+    <script>
+        function on(){
+            const image=document.getElementById('myImage');
+            image.src='images/bulb_on.webp'
+        }
+  
+        // BY EVENTLISTENER//
+        const offbtn=document.querySelector('#btn2');
+        offbtn.addEventListener("click",()=>{
+            const image=document.getElementById('myImage');
+            image.src='images/bulb_off.png'
+        })
+
+    </script>
+</body>
+</html>

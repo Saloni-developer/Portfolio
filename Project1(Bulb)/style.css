@@ -1,0 +1,40 @@
+body{
+    background: purple;
+}
+.main{
+    margin-bottom: 800px;
+    /* background: white; */
+    padding: 50px;
+    width: 800px;
+    height: 400px;
+    margin-left: 280;
+    margin-top: 120px;
+}
+h1{
+    text-align: center;
+   color: red; 
+   font-weight: 700;
+}
+button{
+    background: orange;
+    color: black;
+    padding: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 100px;
+}
+button:hover{
+    background: white;
+    color: orange;
+}
+#btn1{
+    margin-left: 100px;
+}
+#btn2{
+    margin-left: 120px;
+}
+img{
+    height: 300px;
+    width: 250px;
+    margin-left: 100px;
+}

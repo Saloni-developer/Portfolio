@@ -1,0 +1,30 @@
+body{
+    background: burlywood;
+    display: grid;
+    place-items: center;
+}
+form{
+    background: pink;
+    font-size: 2rem;
+    padding: 50px;
+}
+
+#temp{
+    margin-left: 170px;
+}
+.submit{
+    margin-left: 280px;
+    padding: 10px;
+    background: black;
+    color: white;
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+.submit:hover{
+    background: white;
+    color: black;
+}
+#result{
+    margin-left: 290px;
+    font-size: 2rem;
+}

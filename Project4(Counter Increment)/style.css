@@ -1,0 +1,14 @@
+body{
+    background: rgb(167, 167, 217);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 2rem;
+    text-align: center;
+
+}
+.counter{
+    color: rgb(206, 206, 16);
+    font-size: 5rem;
+    text-align: center;
+}
