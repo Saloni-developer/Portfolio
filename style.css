@@ -577,14 +577,16 @@ text-align: center;
     align-items: center;
     justify-content: space-evenly;
     padding: 70px 100px;
-    background: rgb(3, 3, 73);
+    background-image: url("Images/bg2.webp");
+    border-radius: 30px;
+    margin: 10px;
     
 }
 .mini-card{
     height: 200px;
     width: 200px;
     border-radius: 20px;
-    box-shadow: 7px 7px 7px 7px rgba(255, 255, 255, 0.233);
+    box-shadow: 7px 7px 7px 7px rgba(0, 0, 0, 0.707);
 }
 .mini-card h4{
     text-align: center;
