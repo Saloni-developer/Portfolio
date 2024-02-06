@@ -3,7 +3,197 @@
     padding: 0px;
     box-sizing: border-box;
 }
-.main-container{
+
+.nav-container {
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    align-items: center;
+    padding: 0 2%;
+    box-shadow: 0px 0px 15px 2px rgba(7, 6, 6, 0.575);
+    position: sticky;
+    top: 0;
+}
+.logo{
+    height: 50px;
+    width: 100px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.logo img{
+    height: 50px;
+    width: 100px;
+    margin-left: 40px;
+}
+/* .nav-container .nav-logo {
+    padding: 6px 0;
+}
+
+.nav-container .nav-logo a {
+    font-size: 3.5vmax;
+    text-decoration: none;
+
+    font-weight: 800;
+    margin-left: 30px;
+    letter-spacing: 2px;
+} */
+
+.nav-items {
+    margin-right: 0;
+    padding: 8px 20px;
+
+}
+
+.nav-items a {
+    text-decoration: none;
+    margin: 0 15px;
+    color: #fff;
+    font-size: 22px;
+    padding: 10px 15px;
+}
+
+.active {
+    background-color: #f85151f3;
+    backdrop-filter: blur(10px);
+}
+
+.nav-items a:hover {
+    color: rgb(250, 249, 249);
+    background-color: black;
+}
+
+.hamburger {
+    display: none;
+
+}
+
+@media screen and (max-width:1024px) {
+
+    .nav-items {
+        margin-right: 0;
+        padding: 8px 20px;
+
+    }
+
+    .nav-items a {
+        text-decoration: none;
+        margin: 0 15px;
+        color: #fff;
+        font-size: 22px;
+        padding: 10px 15px;
+    }
+
+}
+
+@media screen and (min-width:769px) and (max-width:1023px) {
+    .nav-container .nav-logo {
+        padding: 10px 0;
+    }
+
+    .nav-container .nav-logo a {
+        font-size: 4vmax;
+        text-decoration: none;
+        background-image: linear-gradient(to right, rgb(6, 87, 128), #fff 35%, #a55306);
+        background-size: 200% auto;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: gradient 3s linear infinite;
+        font-weight: 800;
+    }
+
+    .nav-items {
+        margin-right: 0;
+        padding: 8px 0px;
+
+    }
+
+    .nav-items a {
+        text-decoration: none;
+        margin: 0 15px;
+        color: #fff;
+        font-size: 22px;
+        padding: 10px 15px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .nav-container .nav-logo a {
+        font-size: 5vmin;
+        text-decoration: none;
+        color: #fff;
+        margin-left: 10px;
+    }
+
+    .nav-items {
+        display: none;
+
+    }
+
+    .nav-items a {
+        text-align: center;
+        margin: 20px 20px;
+        color: black;
+    }
+
+    .nav-items a:hover {
+        background-color: black;
+        color: #fff;
+    }
+
+    .hamburger {
+        display: block;
+        margin-right: 20px;
+    }
+
+    .hamburger .bar {
+        position: relative;
+        width: 32px;
+        height: 3px;
+        border-radius: 50px;
+        background-color: #fff;
+        margin: 7px 0;
+        transition: all 0.5s;
+    }
+
+    .hamburgerClose {
+        transition: all 0.5s;
+    }
+
+    .hamburgerClose .bar:nth-child(1) {
+        position: absolute;
+        transform: rotate(43deg);
+    }
+
+    .hamburgerClose .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburgerClose .bar:nth-child(3) {
+        position: absolute;
+        top: 16px;
+        transform: rotate(138deg);
+    }
+
+    .mystyle {
+        display: block;
+        position: absolute;
+        padding-top: 41px;
+        width: 60%;
+        height: 90vh;
+        top: 49px;
+        right: 0;
+        background-color: #ffffff4b;
+        backdrop-filter: blur(10px);
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.288);
+        transition: all 0.5s ease-in-out;
+    }
+}
+
+/* .main-container{
     background: rgba(0, 0, 0, 0.8);
     display: flex;
     justify-content: space-between;
@@ -66,7 +256,7 @@ nav ul li a:hover{
 .resume :hover{
     background:white;
     color: red;
-}
+} */
 .center{
     display: flex;
     align-items: center;
@@ -107,6 +297,7 @@ nav ul li a:hover{
     text-decoration: none;
     color: white;
 }
+
 #learn a:hover{
     background: white;
     color: red;
@@ -121,12 +312,14 @@ nav ul li a:hover{
 }
 @keyframes forward{
     0%{
-        transform: translateX(0px);
+        transform: translateY(0px);
     }
     100%{
-        transform: translateX(5px);
+        transform: translateY(5px);
     }
 }
+
+
 .about{
     display: flex;
     align-items: center;
