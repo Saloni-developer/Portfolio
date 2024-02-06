@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 .nav-container {
 
     width: 100%;
@@ -532,6 +533,7 @@ text-align: center;
     padding-top: 40px;
     font-family: 'Times New Roman', Times, serif;
     font-weight: 900;
+    
 }
 .profile-card{
     display: flex;
@@ -546,18 +548,25 @@ text-align: center;
 }
 .card-content h1{
     color: rgb(3, 3, 73);
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-align: justify;
+    font-weight: 900;
 }
 .card-content p{
     font-weight: 400;
+    font-size: 1.3rem;
+    text-align: justify;
+}
+.card-content h3{
+    color: rgb(3, 3, 73);
     font-size: 1.5rem;
     text-align: justify;
+    font-weight: 700;
 }
 .card-image{
     height: 300px;
     width: 550px;
-    box-shadow: 7px 7px 7px 7px rgba(3, 3, 73, 0.116);
+    box-shadow: 7px 7px 7px 7px rgb(197, 197, 180);
 }
 .card-image img{
     height: 300px;
